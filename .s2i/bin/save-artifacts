@@ -1,9 +1,9 @@
 #!/bin/bash
 
 echo "running save-artifacts"
-pushd ${HOME}
-if [ -d deps ]; then
-    # all deps contents to tar stream
-    tar cf - deps
-fi
-popd
+#pushd ${HOME}
+#if [ -d deps ]; then
+#    # all deps contents to tar stream
+#    tar cf - deps
+#fi
+#popd
