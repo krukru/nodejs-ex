@@ -30,6 +30,7 @@ shopt -s dotglob
 echo "---> Installing application source ..."
 mv /tmp/src/* ./
 
+echo ">>>>>>> Attempting to restore node_modules <<<<<<<"
 if [ "$(ls /tmp/artifacts 2>/dev/null)" ]; then
     echo "Restoring node_modules from previous build"
     mv /tmp/artifacts/* ./
