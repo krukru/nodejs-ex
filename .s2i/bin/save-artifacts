@@ -1,9 +1,3 @@
-#!/bin/bash
-
-echo "running save-artifacts"
-#pushd ${HOME}
-#if [ -d deps ]; then
-#    # all deps contents to tar stream
-#    tar cf - deps
-#fi
-#popd
+#!/bin/sh -e
+set -e
+tar -C /opt/app-root/src -cf - node_modules
